@@ -20,41 +20,34 @@ const JetBrainsMonoFont = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Alex Pate - Product Engineer',
+  title: 'Tagir Sharipov - Software Engineer',
   description:
-    'Alex Pate is a product engineer based in Milan, working somewhere on the boundary between design and code.',
-  twitter: {
-    card: 'summary_large_image',
-    creator: '@alexjpate',
-    images: ['/og.png'],
-    title: 'Alex Pate - Product Engineer',
-  },
+    'Tagir Sharipov is a software developer based in Italy, creating web applications.',
   openGraph: {
-    title: 'Alex Pate - Product Engineer',
+    title: 'Tagir Sharipov - Product Engineer',
     images: [
       {
         url: '/og.png',
         width: 1200,
         height: 630,
-        alt: 'Alex Pate - Product Engineer',
+        alt: 'Tagir Sharipov - Software Developer',
       },
     ],
-    siteName: 'Alex Pate - Product Engineer',
+    siteName: 'Tagir Sharipov - Software Engineer',
   },
-  metadataBase: new URL('https://alexpate.com'),
+  metadataBase: new URL('https://tagir.it'),
 };
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: 'Alex Pate',
-  image: 'https://alexpate.com/avatar.jpeg',
-  url: 'https://alexpate.com',
-  jobTitle: 'Product Engineer',
+  name: 'Tagir Sharipov',
+  image: 'https://tagir.it/avatar.jpeg',
+  url: 'https://tagir.it',
+  jobTitle: 'Software Engineer',
   sameAs: [
-    'https://twitter.com/alexjpate',
-    'https://www.github.com/alexpate',
-    'https://www.linkedin.com/in/alexjpate/',
+    'https://www.github.com/TagirSharipov',
+    'https://www.linkedin.com/in/tagir-sharipov/',
   ],
 };
 
@@ -82,7 +75,7 @@ export default function RootLayout({
           <header className="pt-8 md:pt-16 pb-16 px-4 md:px-0 flex justify-between">
             <Link href="/">
               <h1 className="text-base font-mono font-semibold text-slate-950">
-                ap
+                ts
               </h1>
             </Link>
             <nav className="flex gap-4">
@@ -92,12 +85,7 @@ export default function RootLayout({
               >
                 Information
               </Link>
-              <Link
-                href="/posts"
-                className="text-950 text-sm tracking-tighter font-mono font-semibold"
-              >
-                Writing
-              </Link>
+              
               <Link
                 className="text-950 text-sm tracking-tighter font-mono font-semibold"
                 href="/contact"
@@ -109,7 +97,7 @@ export default function RootLayout({
           {children}
           <footer className="px-4 md:px-0 border-t border-slate-200 py-8 text-slate-700 font-mono text-xs tracking-tight flex justify-between">
             <p>
-              &copy; 2010 - {new Date().getFullYear()} {'/'} Alex Pate
+              &copy; {new Date().getFullYear()} {'/'} Tagir Sharipov (inspired by Alex Pate)
             </p>
             <p>
               <Link href="https://github.com/alexpate/www">View Source</Link>

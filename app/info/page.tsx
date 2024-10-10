@@ -10,28 +10,34 @@ const experience: {
   logo: string;
 }[] = [
   {
-    company: 'MoonPay',
+    company: 'Keybiz',
     role: 'Senior Front-End Engineer',
-    date: 'April 2022 → August 2024',
-    logo: '/moonpay-logo.jpg',
+    date: 'April 2022 → Present',
+    logo: '/keybiz_logo.jpeg',
   },
   {
-    company: 'Monzo',
-    role: 'Web Engineer / Product Designer',
-    date: 'May 2019 → November 2021',
-    logo: '/monzo-logo.png',
+    company: 'Nexi Digital',
+    role: 'Front-End Developer / Contractor',
+    date: 'June 2022 → November 2021',
+    logo: '/nexi-logo.jpeg',
   },
   {
-    company: 'Kalo',
-    role: 'UI Engineer',
+    company: 'Size4.me SRL',
+    role: 'Fullstack Developer',
     date: 'February 2017 → May 2019',
-    logo: '/kalo-logo.jpg',
+    logo: '/size4me-logo.webp',
   },
   {
-    company: 'Pusher',
+    company: 'PolnaKorzina',
     role: 'Front-end Developer',
     date: 'September 2015 → January 2017',
-    logo: '/pusher-logo.jpg',
+    logo: '/polnakorzina-logo.webp',
+  },
+  {
+    company: 'Deloitte',
+    role: 'Senior Consultant',
+    date: 'September 2015 → January 2017',
+    logo: '/deloitte-logo.png',
   },
 ];
 
@@ -41,16 +47,14 @@ export default async function InfoPage() {
       <PageHeader title="Information" />
       <section className="pb-8 prose prose-lg">
         <p>
-          Hi there, I&apos;m Alex. I build my own products, along side working
+          Hi there, I&apos;m Tagir. I , along side working
           with some amazing companies to help them build theirs.
         </p>
         <p>
-          Most recently, I was working with MoonPay to help build the future of
-          payments. Before that, I was working with Monzo - the fastest growing
-          bank in the UK. Originally joining as a product designer, I
-          transitioned into a web engineer role where I worked with a variety of
-          teams to help rethink modern day banking for their millions of
-          customers.
+          Most recently, I work with software development agency to help deilver modern web applications to the customers.
+          Before that, I was working with Nexi - to help build the future of payments. 
+          I worked with a variety of teams to create a payment management platform for their millions of
+          clients.
         </p>
 
         <p>
@@ -69,7 +73,7 @@ export default async function InfoPage() {
         <p>
           If you&apos;re interested in working together, feel free to reach out
           to me here:{' '}
-          <Link href="mailto:hey@alexpate.com">hey@alexpate.com</Link>.
+          <Link href="mailto:contact@tagir.it">contact@tagir.it</Link>.
         </p>
       </section>
 

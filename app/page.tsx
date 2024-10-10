@@ -14,16 +14,16 @@ const projects: {
   image: string;
 }[] = [
   {
-    title: 'Hystruct',
-    href: 'https://www.hystruct.com',
-    description: 'Scrape structured data from the web with AI',
-    image: '/hystruct.png',
+    title: 'Meetings Planning App',
+    description: 'Set of interactive data visualization components.',
+    image: '/calendar.png',
+    href: '/projects/meetings-planning',
   },
   {
-    title: 'Glow',
+    title: 'Infografics',
     href: 'https://glow.as',
     description:
-      'A super simple way to create beautiful personal landing pages.',
+      'Set of interactive data visualization components.',
     image: '/glow.png',
   },
   {
@@ -50,16 +50,15 @@ export default async function Home() {
     <main className="px-4 md:px-0">
       <section className="pb-14 border-b border-slate-300 mb-14">
         <h1 className="font-semibold text-4xl mb-4 text-slate-950">
-          Ciao, I’m Alex.
+          Ciao, I’m Tagir.
           <span className="block text-slate-500 font-normal text-2xl">
-            A product engineer from the UK based in Milan.
+            A software engineer based in Tuscany and working remotely.
           </span>
         </h1>
         <p className="text-slate-700 text-lg md:text-xl leading-normal">
-          I work with leading-edge companies to create exceptional products. I
-          most recently worked with MoonPay to help make web3 accessible. Before
-          that, I built personal and business banking products for millions of
-          customers at Monzo.
+          I work with leading-edge companies to create modern web applications. 
+          I have developed products that are now used by large corporations as well as ambitious startups. 
+          I focus on React and JavaScript.
         </p>
         <Link
           href="/info"
@@ -74,7 +73,7 @@ export default async function Home() {
 
       <section className="pb-16">
         <Title as="h2" variant="secondary" className="mb-4">
-          Personal Projects
+          Projects
         </Title>
 
         <p className="text-slate-700 text-lg">

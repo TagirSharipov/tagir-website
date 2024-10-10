@@ -24,8 +24,8 @@ const contact: {
   },
   {
     method: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/alexjpate/',
-    label: 'in/alexjpate',
+    link: 'https://www.linkedin.com/in/tagir-sharipov/',
+    label: 'in/tagir-sharipov',
   },
 ];
 export default async function InfoPage() {

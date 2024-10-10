@@ -9,6 +9,9 @@ import { getAllPostPaths, getPostBySlug } from '@/lib/articles';
 import { Metadata } from 'next';
 import { Title } from '@/app/components/title';
 
+import EnlargeableImage from '../../components/image-modal';
+import VideoPlayer from '../../components/video-player';
+
 export async function generateStaticParams() {
   const paths = getAllPostPaths(true);
 
@@ -21,8 +24,8 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   return {
     title: workItem?.meta.title,
     description: workItem?.meta.description,
-    publisher: 'Alex Pate',
-    creator: 'Alex Pate',
+    publisher: 'Tagir Sharipov',
+    creator: 'Tagir Sharipov',
   };
 }
 
@@ -31,6 +34,7 @@ type Params = {
 };
 
 export default async function WorkItem({ params }: { params: Params }) {
+
   const post = getPostBySlug(params.slug, true);
 
   if (!post) return notFound();
@@ -55,6 +59,7 @@ export default async function WorkItem({ params }: { params: Params }) {
                 ] as unknown as Pluggable[],
               },
             }}
+            components={{EnlargeableImage, VideoPlayer}}
           />
         </article>
       </section>

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 import { getAllPosts } from '@/lib/articles';
 
-const baseUrl = `https://alexpate.com`;
+const baseUrl = `https://tagir.it`;
 
 const baseSitemap = [
   {
@@ -23,12 +23,7 @@ const baseSitemap = [
     changeFrequency: 'never',
     priority: 0.5,
   },
-  {
-    url: `${baseUrl}/posts`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly',
-    priority: 0.7,
-  },
+
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

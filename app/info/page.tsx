@@ -47,32 +47,33 @@ export default async function InfoPage() {
       <PageHeader title="Information" />
       <section className="pb-8 prose prose-lg">
         <p>
-          Hi there, I&apos;m Tagir. I , along side working
-          with some amazing companies to help them build theirs.
+          Hi there, I&apos;m Tagir. I got into programming back in high school.
+          My first serious project was a 2D arcade game written in GW-Basic.
+          After graduating, I earned a Master's degree with honors in Computer
+          Science, specializing in Software Development. I then began my career
+          as a programmer, which was also interspersed with work in consulting
+          at a Big-4 firm.
         </p>
         <p>
-          Most recently, I work with software development agency to help deilver modern web applications to the customers.
-          Before that, I was working with Nexi - to help build the future of payments. 
-          I worked with a variety of teams to create a payment management platform for their millions of
-          clients.
-        </p>
-
-        <p>
-          I also worked with Kalo (which eventually became Polywork) where I was
-          the first UI Engineering hire. My responsibilities included building
-          out the design system as well as ensuring a high bar of design quality
-          across the product.
+          Most recently, I was working with software development agency to help
+          deilver modern web applications to the customers. Before that, I was
+          working with Nexi - to help build the future of payments. I worked
+          with a variety of teams to create a payment management platform for
+          their millions of clients.
         </p>
 
         <p>
-          I&apos;ve always bounced somewhere between design and engineering,
-          however the common thread has always been my love for building things
-          that people love to use.
+          I worked on projects for both large corporations and ambitious
+          startups. I am willing to go the extra mile to achieve my goals. At
+          one point, I realized that in building ERP systems, I lacked knowledge
+          in financial accounting, so I obtained a CPA certification to fill
+          that gap.
         </p>
 
         <p>
-          If you&apos;re interested in working together, feel free to reach out
-          to me here:{' '}
+          I am currently looking to join a team of professionals to develop web
+          applications using the React/TypeScript stack. If you&apos;re interested in
+          collaborating, feel free to reach out to me here.":{' '}
           <Link href="mailto:contact@tagir.it">contact@tagir.it</Link>.
         </p>
       </section>

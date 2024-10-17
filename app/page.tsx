@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { ReactElement } from 'react';
 import Image from 'next/image';
 
 import { ArticleLink } from './components/article-link';
@@ -20,11 +19,11 @@ const projects: {
     href: '/projects/meetings-planning',
   },
   {
-    title: 'Infografics',
-    href: 'https://glow.as',
+    title: 'Infographics',
+    href: '/projects/infographics',
     description:
       'Set of interactive data visualization components.',
-    image: '/glow.png',
+    image: '/infographics.png',
   },
   {
     title: 'FlagDB',
@@ -51,13 +50,13 @@ export default async function Home() {
       <section className="pb-14 border-b border-slate-300 mb-14">
         <h1 className="font-semibold text-4xl mb-4 text-slate-950">
           Ciao, I’m Tagir.
-          <span className="block text-slate-500 font-normal text-2xl">
+          <span className="block text-slate-500 font-normal text-2xl mt-4">
             A software engineer based in Tuscany and working remotely.
           </span>
         </h1>
         <p className="text-slate-700 text-lg md:text-xl leading-normal">
           I work with leading-edge companies to create modern web applications. 
-          I have developed products that are now used by large corporations as well as ambitious startups. 
+          I have created products currently utilized by both large corporations and aspiring startups.
           I focus on React and JavaScript.
         </p>
         <Link
@@ -97,6 +96,7 @@ export default async function Home() {
                     width={450}
                     height={240}
                     quality={90}
+                  
                     src={project.image}
                     alt=""
                     className="rounded-xl bg-cover"

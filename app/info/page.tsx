@@ -18,25 +18,25 @@ const experience: {
   {
     company: 'Nexi Digital',
     role: 'Front-End Developer / Contractor',
-    date: 'June 2022 → November 2021',
+    date: 'June 2021 → April 2022',
     logo: '/nexi-logo.jpeg',
   },
   {
     company: 'Size4.me SRL',
     role: 'Fullstack Developer',
-    date: 'February 2017 → May 2019',
+    date: 'February 2017 → June 2021',
     logo: '/size4me-logo.webp',
   },
   {
     company: 'PolnaKorzina',
     role: 'Front-end Developer',
-    date: 'September 2015 → January 2017',
+    date: 'December 2012 → January 2016',
     logo: '/polnakorzina-logo.webp',
   },
   {
     company: 'Deloitte',
     role: 'Senior Consultant',
-    date: 'September 2015 → January 2017',
+    date: '2010 → 2012',
     logo: '/deloitte-logo.png',
   },
 ];
@@ -55,16 +55,16 @@ export default async function InfoPage() {
           at a Big-4 firm.
         </p>
         <p>
-          Most recently, I was working with software development agency to help
-          deilver modern web applications to the customers. Before that, I was
-          working with Nexi - to help build the future of payments. I worked
+          Most recently, I worked with software development agency to
+          deliver modern web applications to the customers. Before that, I was
+          at Nexi contributing to building the future of payments. I worked
           with a variety of teams to create a payment management platform for
           their millions of clients.
         </p>
 
         <p>
           I worked on projects for both large corporations and ambitious
-          startups. I am willing to go the extra mile to achieve my goals. At
+          startups. I am willing to go the extra mile to achieve my goals. For example, at
           one point, I realized that in building ERP systems, I lacked knowledge
           in financial accounting, so I obtained a CPA certification to fill
           that gap.

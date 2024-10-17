@@ -26,10 +26,10 @@ const projects: {
     image: '/infographics.png',
   },
   {
-    title: 'FlagDB',
-    href: 'https://flagdb.com',
+    title: 'Innovations Portal',
+    href: '/projects/kalo-ui',
     description:
-      'A personal project to build a database of flags from around the world',
+      'Corporate portal to manage innovative initiatives',
     image: '/flagdb.png',
   },
   {

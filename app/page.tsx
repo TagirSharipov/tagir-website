@@ -12,17 +12,17 @@ const projects: {
   image: string;
 }[] = [
   {
-    title: 'Meetings Planning App',
-    description: 'Set of interactive data visualization components.',
-    image: '/calendar.png',
-    href: '/projects/meetings-planning',
-  },
-  {
     title: 'Infographics',
     href: '/projects/infographics',
     description:
       'Set of interactive data visualization components.',
     image: '/infographics.png',
+  },
+  {
+    title: 'Meetings Planning App',
+    description: 'Set of interactive data visualization components.',
+    image: '/calendar.png',
+    href: '/projects/meetings-planning',
   },
   {
     title: 'Innovations Portal',

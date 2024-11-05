@@ -85,7 +85,6 @@ export default function RootLayout({
               >
                 Information
               </Link>
-              
               <Link
                 className="text-950 text-sm tracking-tighter font-mono font-semibold"
                 href="/contact"

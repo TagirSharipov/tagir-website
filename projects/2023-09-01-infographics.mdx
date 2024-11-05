@@ -1,0 +1,52 @@
+---
+title: Infographics components and charts
+description: Set of graphic components and charts visualizing data
+year: '2019'
+role: Engineering
+featured_image: design-kit.png
+is_featured: true
+---
+
+Set of components built for the platform of in-depth analysis of the economic, social, and environmental effects of investments and policies.
+
+
+## Interactive indicators visualization.
+By integrating these infographic components, the platform creates an intuitive and engaging user experience that enhances understanding and facilitates data analysis.
+
+### Charts
+- Line Charts These charts display how values for economic indicators, environmental effects, or social measures change over time. They allow users to rapidly understand the influence on metrics such as GDP growth rates, income, or population well-being across different periods.
+- Radar Charts: Evaluate multiple variables to compare performance in different dimensions.
+- Bubble Heatmaps: Combine the functionality of both bubble charts and heatmaps to display multivariate data with varying intensity levels, helping to quickly identify patterns or outliers.
+
+### Diagrams
+- Chord Diagram: Visualize relationships and flows between different datasets.
+- Network Diagram: Illustrate stakeholder interdependencies.
+
+### Choropleth Maps
+
+- Geospatial Analysis: Highlight regional disparities in indicators.
+
+## Demo
+
+This video shows an app created as a proof of concept (PoC) for showcasing the functionality of developed packages
+
+<video controls autoPlay loop muted>
+  <source
+    src="/work/oe.mp4"
+    type="video/mp4"
+  />
+</video>
+
+## Technical details
+
+The project employs a modular development approach using NPM packages 
+to implement custom chart components as microfrontends. 
+This pattern involves packaging each microfrontend as an NPM package, 
+allowing teams to develop, test, and deploy independently. 
+
+The project is built using React 18, ensuring the use of the latest features and improvements in the React ecosystem.
+
+Key dependencies include:
+- React and React DOM: Core libraries for building the user interface.
+- styled-components: For CSS-in-JS styling.
+- D3.js for geographic projections and generation of paths, arcs and ribbons (chord diagram). 

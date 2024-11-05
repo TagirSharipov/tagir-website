@@ -47,34 +47,36 @@ export default async function InfoPage() {
       <PageHeader title="Information" />
       <section className="pb-8 prose prose-lg">
         <p>
-          Hi there, I&apos;m Tagir. I got into programming back in high school.
-          My first serious project was a 2D arcade game written in GW-Basic.
-          After graduating, I earned a Master's degree with honors in Computer
-          Science, specializing in Software Development. I then began my career
-          as a programmer, which was also interspersed with work in consulting
-          at a Big-4 firm.
+          Hi there, I&apos;m Tagir, a seasoned software developer with expertise
+          in React and TypeScript, focused on building dynamic, high-performance
+          web solutions.
+        </p>{' '}
+        <p>
+          I got into programming back in high school. My first serious project
+          was a 2D arcade game written in GW-Basic. After graduating, I earned a
+          Master&apos;s degree with honors in Computer Science, specializing in
+          Software Development. I then began my career as a programmer, which
+          was also interspersed with work in consulting at a Big-4 firm.
         </p>
         <p>
-          Most recently, I worked with software development agency to
-          deliver modern web applications to the customers. Before that, I was
-          at Nexi contributing to building the future of payments. I worked
-          with a variety of teams to create a payment management platform for
-          their millions of clients.
+          Most recently, I worked with software development agency to deliver
+          modern web applications to the customers. Before that, I was at Nexi
+          contributing to building the future of payments. I worked with a
+          variety of teams to create a payment management platform for their
+          millions of clients.
         </p>
-
         <p>
           I worked on projects for both large corporations and ambitious
-          startups. I am willing to go the extra mile to achieve my goals. For example, at
-          one point, I realized that in building ERP systems, I lacked knowledge
-          in financial accounting, so I obtained a CPA certification to fill
-          that gap.
+          startups. I am willing to go the extra mile to achieve my goals. For
+          example, at one point, I realized that in building ERP systems, I
+          lacked knowledge in financial accounting, so I obtained a CPA
+          certification to fill that gap.
         </p>
-
         <p>
-          I am currently looking to join a team of professionals to develop web
-          applications using the React/TypeScript stack. If you&apos;re interested in
-          collaborating, feel free to reach out to me here.":{' '}
-          <Link href="mailto:contact@tagir.it">contact@tagir.it</Link>.
+          I&apos;m currently open to new opportunities in web application development
+          using React and TypeScript. If you&apos;re looking for a committed
+          developer to join your team, feel free to reach out: {' '}
+          <Link href="mailto:contact@tagir.it">contact@tagir.it</Link>
         </p>
       </section>
 

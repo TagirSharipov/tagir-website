@@ -9,7 +9,7 @@ const contact: {
 }[] = [
   {
     method: 'Email',
-    link: 'mailto:hey@alexpate.com',
+    link: 'mailto:contact@tagir.it',
     label: 'contact@tagir.it',
   },
 

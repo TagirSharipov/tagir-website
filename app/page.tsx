@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { ArticleLink } from './components/article-link';
 import clsx from 'clsx';
 import { getAllPosts } from '@/lib/articles';
 import { Title } from '@/app/components/title';
@@ -27,16 +26,16 @@ const projects: {
   },
   {
     title: 'Innovations Portal',
-    href: '/projects/kalo-ui',
+    href: '/projects/innovations',
     description:
       'Corporate portal to manage innovative initiatives',
-    image: '/flagdb.png',
+    image: '/inno.png',
   },
   {
-    href: 'https://github.com/alexpate/awesome-design-systems',
-    title: 'Awesome Design Systems',
-    description: 'A curated list of design systems',
-    image: '/awesome-design-systems.png',
+    href: '/projects/admin-ui',
+    title: 'Admin UI',
+    description: 'Admin UI for managing content',
+    image: '/admin.png',
   },
 ];
 
@@ -114,7 +113,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="pt-10 pb-16">
+     {/*  <section className="pt-10 pb-16">
         <Title as="h2" variant="secondary" className="mb-8">
           Recent Writing
         </Title>
@@ -140,7 +139,7 @@ export default async function Home() {
             →
           </span>
         </Link>
-      </section>
+      </section> */}
     </main>
   );
 }

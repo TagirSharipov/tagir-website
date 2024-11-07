@@ -4,8 +4,6 @@ import Image from 'next/image';
 import clsx from 'clsx';
 import { getAllPosts } from '@/lib/articles';
 import { Title } from '@/app/components/title';
-
-import { verifiedSession } from '@/lib/auth';
 import { cookies, headers } from 'next/headers';
 
 const projects: {
@@ -42,20 +40,13 @@ const projects: {
   },
 ];
 
-export default async function Home({searchParams}: {searchParams: Record<string, string>}) {
-  const posts = await getAllPosts({
+export default async function Home() {
+/*   const posts = await getAllPosts({
     includeDrafts: process.env.NODE_ENV === 'development',
   });
+ */
 
-
-  const session = await verifiedSession();
-
-  const co =
-  cookies().has("access") 
-                          || headers().has("x-access");
-  // const res = await create(searchParams?.access) ;
-
-  console.log(session, co);
+  const showProjects = cookies().has("access") || headers().has("x-access");
 
 
   return (
@@ -83,7 +74,7 @@ export default async function Home({searchParams}: {searchParams: Record<string,
         </Link>
       </section>
 
-      {co && <section className="pb-16">
+      {showProjects && <section className="pb-16">
         <Title as="h2" variant="secondary" className="mb-4">
           Projects
         </Title>

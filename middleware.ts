@@ -1,28 +1,21 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export const middleware = (request: NextRequest) => {
-  if (request.headers.has("x-viewed-welcome-message")) {
-    throw new Error("Cannot set x-viewed-welcome-message header")
-}
+  if (request.headers.has('x-access')) {
+    throw new Error('Cannot set x-access header');
+  }
 
-const newRequestHeaders = new Headers(request.headers)
-newRequestHeaders.set("x-access", "true")
-
-const response = NextResponse.next({
-    request: {
-        headers: newRequestHeaders
-    }
-
-})
-
+  const newRequestHeaders = new Headers(request.headers);
   const access = request.nextUrl.searchParams.get('t');
-  console.log('access res', access);
+  if (access) {
+    newRequestHeaders.set('x-access', 'true');
+    const response = NextResponse.next({
+      request: {
+        headers: newRequestHeaders,
+      },
+    });
 
-// https://www.propelauth.com/post/cookies-in-next-js#cookies-in-middleware
-  
-  const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
-
-  if (access)
+    const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
     response.cookies.set(
       'access',
       'true',
@@ -35,8 +28,10 @@ const response = NextResponse.next({
         path: '/',
       }
     );
+    return response;
+  }
 
-  return response;
+  return NextResponse.next();
 };
 
 export const config = {

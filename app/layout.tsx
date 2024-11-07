@@ -1,12 +1,17 @@
-import './assets/globals.css';
 
-import { Metadata } from 'next';
+import { GetServerSideProps, Metadata } from 'next';
 import Link from 'next/link';
 import { Analytics } from '@vercel/analytics/react';
 import localFont from 'next/font/local';
 import { JetBrains_Mono } from 'next/font/google';
 
+import { cookies } from 'next/headers';
+
 import clsx from 'clsx';
+import { use, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import './assets/globals.css';
+
 
 const SaansFont = localFont({
   src: './saans-font.woff2',
@@ -36,7 +41,7 @@ export const metadata: Metadata = {
     siteName: 'Tagir Sharipov - Software Engineer',
   },
   metadataBase: new URL('https://tagir.it'),
-};
+}; 
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -50,7 +55,6 @@ const jsonLd = {
     'https://www.linkedin.com/in/tagir-sharipov/',
   ],
 };
-
 export default function RootLayout({
   children,
 }: {

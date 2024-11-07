@@ -42,6 +42,7 @@ const experience: {
 ];
 
 export default async function InfoPage() {
+
   return (
     <main className="px-4 md:px-0">
       <PageHeader title="Information" />

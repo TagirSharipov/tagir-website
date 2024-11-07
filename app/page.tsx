@@ -5,6 +5,9 @@ import clsx from 'clsx';
 import { getAllPosts } from '@/lib/articles';
 import { Title } from '@/app/components/title';
 
+import { verifiedSession } from '@/lib/auth';
+import { cookies, headers } from 'next/headers';
+
 const projects: {
   href?: string;
   title: string;
@@ -39,10 +42,21 @@ const projects: {
   },
 ];
 
-export default async function Home() {
+export default async function Home({searchParams}: {searchParams: Record<string, string>}) {
   const posts = await getAllPosts({
     includeDrafts: process.env.NODE_ENV === 'development',
   });
+
+
+  const session = await verifiedSession();
+
+  const co =
+  cookies().has("access") 
+                          || headers().has("x-access");
+  // const res = await create(searchParams?.access) ;
+
+  console.log(session, co);
+
 
   return (
     <main className="px-4 md:px-0">
@@ -69,7 +83,7 @@ export default async function Home() {
         </Link>
       </section>
 
-      <section className="pb-16">
+      {co && <section className="pb-16">
         <Title as="h2" variant="secondary" className="mb-4">
           Projects
         </Title>
@@ -111,7 +125,7 @@ export default async function Home() {
             );
           })}
         </div>
-      </section>
+      </section>}
 
      {/*  <section className="pt-10 pb-16">
         <Title as="h2" variant="secondary" className="mb-8">

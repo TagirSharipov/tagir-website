@@ -9,8 +9,8 @@ const contact: {
 }[] = [
   {
     method: 'Email',
-    link: 'mailto:contact@tagir.it',
-    label: 'contact@tagir.it',
+    link: 'mailto:tagir-dev@libero.it',
+    label: 'tagir-dev@libero.it',
   },
 
   {

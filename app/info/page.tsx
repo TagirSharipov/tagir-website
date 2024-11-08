@@ -77,7 +77,7 @@ export default async function InfoPage() {
           I&apos;m currently open to new opportunities in web application development
           using React and TypeScript. If you&apos;re looking for a committed
           developer to join your team, feel free to reach out: {' '}
-          <Link href="mailto:contact@tagir.it">contact@tagir.it</Link>
+          <Link href="mailto:tagir-dev@libero.it">tagir-dev@libero.it</Link>
         </p>
       </section>
 

@@ -88,13 +88,6 @@ export default function RootLayout({
                 Information
               </Link>
               <Link
-                rel="nofollow"
-                href="/Tagir_Sharipov_Resume.pdf"
-                className="text-950 text-sm tracking-tighter font-mono font-semibold"
-              >
-                Resume
-              </Link>
-              <Link
                 className="text-950 text-sm tracking-tighter font-mono font-semibold"
                 href="/contact"
               >
